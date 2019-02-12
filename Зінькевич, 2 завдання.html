@@ -1,0 +1,10 @@
+<body>
+  <script>
+	var str = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, at."
+	var reg = /a/gi, result, arr = [];
+	while ( (result = reg.exec(str)) ) {
+    	arr.push(result.index);
+}
+	document.write(arr)
+  </script>
+</body>
