@@ -1,7 +1,16 @@
 <body>
   <script>
+    //1 задание
   	var a = 234245645335;
   	var sec = a % 3600;
-    document.write(sec + " секунд осталось");
+    console.log(sec);
+    
+    //2 задание
+    var str = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, at."
+	  var reg = /a/gi, result, arr = [];
+	  while ( (result = reg.exec(str)) ) {
+      arr.push(result.index);
+}
+	  console.log(arr)
   </script>
 </body>
