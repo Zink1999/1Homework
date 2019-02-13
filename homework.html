@@ -1,16 +1,19 @@
-<body>
-  <script>
-    //1 задание
-  	var a = 234245645335;
-  	var sec = a % 3600;
-    console.log(sec);
-    
+//1 задание
+  	var time =  234245645335;
+	var wer  = time % 3600;
+	var hours = Math.floor( time / 3600);
+	console.log (hours + " hours");
+	var m = Math.floor(wer / 60);
+	console.log(m + " minutes");
+	var s = wer % 60;
+	console.log(s + " seconds");
+
     //2 задание
-    var str = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, at."
-	  var reg = /a/gi, result, arr = [];
-	  while ( (result = reg.exec(str)) ) {
-      arr.push(result.index);
+	var str = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, at."
+	var reg = /a/gi;
+	var result;
+	var arr = [];
+	while ( (result = reg.exec(str)) ) {
+    	arr.push(result.index);
 }
-	  console.log(arr)
-  </script>
-</body>
+	console.log(...arr);
